@@ -13,6 +13,7 @@ WORKDIR /app
 COPY . .
 RUN go build -mod=vendor -o bin/hello
 
+RUN echo "nothing"
 # -- Stage 2 -- #
 # Create the final environment with the compiled binary.
 FROM alpine
